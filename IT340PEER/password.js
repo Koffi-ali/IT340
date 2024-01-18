@@ -6,3 +6,4 @@ function password(pw){
 }
 
 module.exports=password;
+
