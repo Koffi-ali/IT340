@@ -1,5 +1,6 @@
 
 let database={
-    patient:[]
+    patient:[],
+    patientList: []
 }
 module.exports = database;

@@ -1,7 +1,7 @@
 const database = require('./database');
 
 function retrievePatientList() {
-    return database.patient.map(({ creationDate, ...rest }) => rest)
+    return database.patientList
 }
 
 module.exports = {retrievePatientList}

@@ -24,5 +24,6 @@ function retrievePatient(id) {
 }
 
 
+
 console.log(retrievePatientList(1))
 module.exports = { insertPatient, retrievePatientList, updatePatient, getPatient, retrievePatient };

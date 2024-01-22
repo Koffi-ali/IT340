@@ -6,7 +6,7 @@ const patientDAO = require('./patientDAO')
 
 function addPatient(lastName, firstName) {
     patientDAO.insertPatient(new Patient(firstName, lastName));
-
+    
 }
 
 function getPatientList() {
