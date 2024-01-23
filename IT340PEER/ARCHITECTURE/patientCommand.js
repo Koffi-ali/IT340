@@ -32,7 +32,9 @@ function savePatient(id, lastName, firstName) {
     patientList.firstName = firstName;
     patientList.lastName = lastName;
 
-    const event = new Event("Patient Saved",patient.id,patient)
+    const event = new Event("Patient Saved",patient.id,patient);
+    eventStore.addEvent(event);
+
 
     // patientCommandDAO.updatePatient(patient);
 }

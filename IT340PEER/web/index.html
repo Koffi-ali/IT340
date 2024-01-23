@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <meta charset="UTF-8">
+  <title>TP GLRT</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+
+  <style>
+    /* fichier header.css */
+    :root {
+        --font-color:green;
+        --padcol-border: 2px solid blue;
+        --padding-box:20%;
+        --padding-section:60px;
+        --police_title:serif;
+        --police_section:system-ui;
+        --margin-top:100px;
+
+        --space_xs:10px;
+        --space_s:26px;
+        --space_m:67px;
+        --space_l:175px;
+        --space_xl:457px;
+        --modify_box:10%
+        
+
+    }
+    .header {
+      padding: var(--space_m);
+      border: var(--padcol-border);
+      color:var(--font-color);
+      font-family:var(--police_header) ;
+      animation: font-slide 2s linear  infinite;
+    }
+
+    @keyframes font-slide {
+  from {
+    text-align: start;
+  }
+  
+  50% {
+    text-align: center;
+  }
+  
+  to {
+    text-align: end;
+  }
+}
+  </style>
+  
+  <style>
+    /* fichier section.css */
+    
+    .section {
+      padding: var(--space_s);
+      border: 2px solid orange;
+      font-family:var(--police_section) ;
+    }
+  </style>
+  
+  <style>
+    /* fichier footer.css */
+    
+    .footer {
+      padding: var(--space_m);
+      border: var(--padcol-border);
+      color:var(--font-color);
+      font-family:var(--police_title) ;
+      margin-bottom: 12px;
+    }
+  </style>
+
+  <body>
+    <div>
+        <div class="header">Ceci est un header</div>
+        
+        <div class="section">Section 1</div>
+        <div class="section">Section 2</div>
+        
+        <div class="footer">Ceci est un footer</div>
+    </div>
+  </body>
+
+</html> 
